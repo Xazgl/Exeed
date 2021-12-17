@@ -169,6 +169,37 @@ body {
     color: white;
 }
 
+
+
+/***************************
+****************************
+Второе меню гамбургер */
+
+
+
+.navbar {
+    background-color: rgba(48, 54, 58, 1);
+    padding-right: 10px;
+    display:none;
+}
+
+
+
+#nav-item {
+    margin-left: 25px;
+    border: none;
+}
+
+
+#nav-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color:#c5bbbb;
+}
+
+
+
+
 /***************************
 ****************************
 Контент
@@ -1141,18 +1172,32 @@ h3{
         ul{
             font-size: 12px;
         }
+        .navbar {
+        display: flex
+        }
+        .main {
+        display: none
+        }
     }
+
+
 
 
 @media screen and (max-width: 648px) {
     .testDrive {
         flex-direction: column;
     }
+    .main {
+        display: none
+    }
 }
 
 @media screen and (max-width: 596px) {
     .columnMiniMain {
-        display: flex;
+        display: none;
+    }
+    .main {
+        display: none
     }
 
 
@@ -1254,7 +1299,9 @@ h3{
         padding: 5px;
     }
 
-
+    .main {
+        display: none
+    }
 
 }
 
