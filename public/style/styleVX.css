@@ -6,6 +6,7 @@
 #miniTitle {
     font-size: 40px;
     font-family:Montserrat,sans-serif;
+    font-weight: 300;
 }
 .flexrow{
     flex-direction: row;
@@ -13,7 +14,6 @@
     justify-content: space-between;
     width: 70%;
 }
-
 
 
 .img {
@@ -36,8 +36,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color:white;
     margin-top: 50px;
 }
@@ -47,9 +47,13 @@
 
 .imgTitle {
     font-size: 50px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
 }
 .miniTitle {
     font-size: 80px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .containerWithColumn {
@@ -131,6 +135,10 @@
 
 
 
+.Mini {
+    border:none;
+    font-weight: 300;
+}
 
 
 
@@ -188,10 +196,27 @@
     font-family:Montserrat, sans-serif
 
 }
+.panel {
+    padding: 0 18px;
+    color: #212121;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 20px;
+    font-family:Montserrat, sans-serif;
+    font-weight:300;
+}
 
-.active, .accordion:hover {
+.panel_show {
+    overflow: visible;
+    max-height: none;
+    transition: max-height 0.9s ease-out;
+}
+
+.accordion:hover {
     color:#c78e66;
 }
+
 
 .accordion:after {
     content: '\002B';
@@ -206,14 +231,6 @@
     content: "\2212";
 }
 
-.panel {
-    padding: 0 18px;
-    color: #212121;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    font-size: 15px;
-}
 
 
 

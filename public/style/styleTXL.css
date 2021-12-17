@@ -1,19 +1,19 @@
-#carImg {
-    width: 900px;
-    height: 450px;
-}
 
-#miniTitle {
-    font-size: 40px;
-    font-family:Montserrat,sans-serif;
-}
-.flexrow{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
 
+.logo-right {
+    max-height: inherit;
+    margin: 0;
+    padding:0px;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
+    justify-content: flex-start;
+    margin-left: 10px;
+    color: #c5bbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
 
 
 .img {
@@ -27,9 +27,8 @@
     flex-shrink: 0;
     align-items: baseline;
     justify-content: center;
-
-
 }
+
 
 .imgWords {
     display: flex;
@@ -46,10 +45,34 @@
 
 .imgTitle {
     font-size: 50px;
+    font-weight: 300;
 }
 .miniTitle {
     font-size: 80px;
+    font-weight: 300;
 }
+
+
+#carImg {
+    width: 900px;
+    height: 450px;
+}
+
+#miniTitle {
+    font-size: 40px;
+    font-family:Montserrat,sans-serif;
+    font-weight: 300;
+}
+.flexrow{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+
+
 
 .containerWithColumn {
     display: flex;
@@ -60,8 +83,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-
-    height: 900px;
+    height: 750px;
 }
 
 #leftColumn{
@@ -130,7 +152,10 @@
 
 
 
-
+.Mini {
+    border:none;
+    font-weight: 300;
+}
 
 
 
@@ -155,12 +180,6 @@
     font-size: 40px;
 }
 
-.panel {
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-
-}
 
 
 #titleLi {
@@ -211,10 +230,17 @@ color:#c78e66;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    font-size: 15px;
+    font-size: 20px;
+    font-family:Montserrat, sans-serif;
+    font-weight:300;
+
 }
 
-
+.panel_show {
+    overflow: visible;
+    max-height: none;
+    transition: max-height 0.9s ease-out;
+}
 
 .active {
     font-size: 10px;

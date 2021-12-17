@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+ServerName yourlaravel.com
+DocumentRoot "/public_html/public"
+ServerAlias *.yourlaravel.com
+
+<Directory "/public_html/public">
+    AllowOverride All
+    Require all granted
+</Directory>

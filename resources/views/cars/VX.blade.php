@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,7 +37,8 @@
 
             <div class ="first-colum">
                 <div class ="logo-left">
-                    <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
+                    <a href="{{ route('index') }}"> <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg"  alt="АВТОГРАД EXEED" style="max-width: 128px">  </a>
+                </div>
                 <div class="space"></div>
                 <div class="spaceJ"></div>
                 <div class="logo-right">
@@ -73,7 +75,7 @@
 
 
 
-    <video class="mainVideo" id="video" src="/video/vx.mp4"></video>
+    <video class="mainVideo" id="video"  muted="muted" src="/video/vx.mp4"></video>
 
     <div class="img">
         <div class="imgWords">
@@ -124,7 +126,7 @@
 
 
 
-
+<div id="acc">
 
     <div class="containerWithColumn">
 
@@ -134,32 +136,32 @@
 
         <div  class = "column" id = "rightColumn">
             <div class ="titleColumn">БЕЗУПРЕЧНЫЙ ДИЗАЙН</div>
-            <div class ="titleul">
+            <div class ="titleul"  id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">LED-Оптика</button>
+                    <li id="titleLi"><h3 class="accordion">ED-Оптика</h3>
                         <div class="panel">Полностью светодиодная головная оптика обеспечивает безупречное освещение всех участков дороги, делая каждую поездку в темное время суток максимально комфортной и безопасной.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Панорамный люк</button>
+                    <li id="titleLi"><h3 class="accordion">Панорамный люк</h3>
                         <div class="panel">Площадь панорамного люка внедорожника VX – внушительные 1,12 квадратных метра, а толщина теплоизоляционного стекла – 5 мм. Помимо клавиши в салоне, управлять сдвижной секцией можно с помощью пульта. Предусмотрено автоматическое закрывание люка на случай дождя.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Диски диаметром 20 дюймов</button>
+                    <li id="titleLi"><h3 class="accordion">Диски диаметром 20 дюймов</h3>
                         <div class="panel">Дизайн двухцветных легкосплавных дисков диаметром 20 дюймов разработан специально для модели VX. Все исполнения внедорожника комплектуются шинами Continental.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Стиль и аэродинамика</button>
+                    <li id="titleLi"><h3 class="accordion">Стиль и аэродинамика</h3>
                         <div class="panel">Обновленный TXL – это не только выверенные пропорции и безупречный стиль в каждой детали, но и тщательно проработанная аэродинамика. Коэффициент воздушного сопротивления Cx=0,33 – один из лучших в классе. Это положительно влияет на топливную экономичность, акустический комфорт и управляемость.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Габаритные размеры</button>
+                    <li id="titleLi"><h3 class="accordion">Габаритные размеры</h3>
                         <div class="panel">
                             <ul>
-                                <li>Длина - 4 970 мм</li>
-                                <li>Ширина - 1 940 мм</li>
-                                <li>Высота - 1 788 мм</li>
-                                <li>Колесная база - 2 900 мм</li>
-                                <li>Клиренс - 200 мм</li>
+                                <li class="Mini">Длина - 4 970 мм</li>
+                                <li class="Mini">Ширина - 1 940 мм</li>
+                                <li class="Mini">Высота - 1 788 мм</li>
+                                <li class="Mini">Колесная база - 2 900 мм</li>
+                                <li class="Mini">Клиренс - 200 мм</li>
                             </ul>
                         </div>
                     </li>
@@ -184,29 +186,29 @@
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">ФЛАГМАНСКИЕ ТЕХНОЛОГИИ</div>
-            <div class ="titleul">
+            <div class ="titleul"  id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">Цифровой кокпит высокой четкости</button>
+                    <li id="titleLi"><h3 class="accordion">Цифровой кокпит высокой четкости</h3>
                         <div class="panel">Цифровой кокпит внедорожника VX включает два цветных дисплея диагональю 12,3 каждый. Разрешение экранов (правый – сенсорный) – 1920*720 пикселей. Широкие возможности персонализации позволяют выбрать один из трех вариантов дизайна и графики.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Проекционный экран</button>
+                    <li id="titleLi"><h3 class="accordion">Проекционный экран</h3>
                         <div class="panel">Проекционный дисплей – история не только про удобство, но и про безопасность. Вся необходимая информация буквально «парит над капотом» внедорожника VX, позволяя не отвлекаться от дороги.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Трёхзонный климат-контроль</button>
+                    <li id="titleLi"><h3 class="accordion">Трёхзонный климат-контроль</h3>
                         <div class="panel">Пассажирам второго ряда сидений внедорожника VX полагается собственный климатический блок с возможностью регулировки температуры. За качество салонного воздуха отвечает фирменная система очистки.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Парящая центральная консоль</button>
+                    <li id="titleLi"><h3 class="accordion">Парящая центральная консоль</h3>
                         <div class="panel">«Парящая» центральная консоль придает интерьеру VX визуальную легкость, подчеркивая премиальный статус автомобиля.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Премиум-аудиосистема Arkamys и акустика Sony</button>
+                    <li id="titleLi"><h3 class="accordion">Премиум-аудиосистема Arkamys и акустика Sony</h3>
                         <div class="panel">12 динамиков премиальной акустической системы, созданной с привлечением лучших представителей музыкальной индустрии – компаний Arkamys и Sony обеспечивают мощное, чистое и детальное звучание в каждом уголке салона.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Контурная подсветка салона</button>
+                    <li id="titleLi"><h3 class="accordion">Контурная подсветка салона</h3>
                         <div class="panel">Создать настроение в салоне внедорожника VX поможет атмосферная подсветка с множеством доступных оттенков.</div>
                     </li>
 
@@ -232,25 +234,25 @@
 
         <div  class = "column" id = "rightColumn">
             <div class ="titleColumn">ПЕРВОКЛАССНЫЙ КОМФОРТ</div>
-            <div class ="titleul">
+            <div class ="titleul"  id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">Семиместный салон</button>
+                    <li id="titleLi"><h3 class="accordion">Семиместный салон</h3>
                         <div class="panel">Габариты внедорожника VX позволили разместить в салоне три ряда сидений. При этом каждое из семи мест – полноценное. Взрослым пассажирам будет комфортно даже на последнем ряду.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Эргономичные сиденья с электрорегулировками</button>
+                    <li id="titleLi"><h3 class="accordion">Эргономичные сиденья с электрорегулировками</h3>
                         <div class="panel">Электрорегулировки анатомических передних кресел VX помогают быстро найти оптимальную посадку людям любого роста и комплекции. Угол наклона спинок сидений второго ряда достигает 42°, позволяя принять полулежачее положение.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Зимний пакет</button>
+                    <li id="titleLi"><h3 class="accordion">Зимний пакет</h3>
                         <div class="panel">Зимний пакет – это дистанционный запуск двигателя, подогревы ветрового стекла, форсунок, боковых зеркал и стекла пятой двери. В салоне VX подогреваются руль, а также первый и второй ряды сидений. Собственные дефлекторы обдува установлены даже на третьем.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Трансформация салона</button>
+                    <li id="titleLi"><h3 class="accordion">Трансформация салона</h3>
                         <div class="panel">Широкие возможности трансформации и огромный багажник позволяют подготовить салонное пространство для решения любых задач</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Функциональный багажник</button>
+                    <li id="titleLi"><h3 class="accordion">Функциональный багажник</h3>
                         <div class="panel">Объем багажника VX в пятиместной конфигурации составляет 520 литров. А максимальная глубина при сложенном втором ряде сидений превышает 2 метра: перевозка длинномеров не станет проблемой. Сервопривод с возможностью управления с ключа поможет сохранить руки чистыми. Угол открывания пятой двери можно настроить.</div>
                     </li>
 
@@ -269,25 +271,22 @@
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">ПОЛНАЯ БЕЗОПАСНОСТЬ</div>
-            <div class ="titleul">
+            <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">4WD от BorgWarner® Smart</button>
+                    <li id="titleLi"><h3 class="accordion" data-id="1">4WD от BorgWarner® Smart</h3>
                         <div class="panel">За распределение крутящего момента между осями VX отвечает многодисковая муфта BorgWarner. Благодаря сверхкороткому времени срабатывания (0,07 секунды) и интеллектуальной системе управления приводом, покорение бездорожья станет легкой и приятной прогулкой.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Мощный двигатель</button>
+                    <li id="titleLi"><h3 class="accordion" data-id="2">Мощный двигатель</h3>
                         <div class="panel">В конфигураторе флагманского EXEED VX мотор 2.0 с отдачей в 249 л.с., обеспечивающий большому внедорожнику достойную динамику разгона. Мотор относится к современному семейству Acteco. Умеет отключать часть цилиндров для экономии топлива при равномерной езде и без замечаний прошел 2 миллиона километров. Это эквивалентно десятилетней эксплуатации при высоких нагрузках.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Система безопасного выхода</button>
+                    <li id="titleLi"><h3 class="accordion" data-id="3">Система безопасного выхода</h3>
                         <div class="panel">Заботясь о безопасности, VX следит за окружающей обстановкой. При обнаружении помехи в виде другого автомобиля или велосипедиста, система безопасного выхода подаст звуковой сигнал при открывании двери.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Ассистент движения в полосе</button>
-                        <div class="panel">Ассистент слежения за разметкой полосе (LKA) – часть комплекса систем активной безопасности внедорожника VX. Он поможет избежать нежелательных перестроений и не позволит съехать с дороги.</div>
-                    </li>
 
-                    <li id="titleLi"><button class="accordion">Система предотвращения фронтального столкновения</button>
+                    <li id="titleLi"><h3 class="accordion">Система предотвращения фронтального столкновения</h3>
                         <div class="panel">Внедорожник VX всегда готов подстраховать водителя, предупредив звуковым зуммером об опасном сближении с впереди идущей машиной или другим объектом и применив принудительное торможение в случае его бездействия.</div>
                     </li>
 
@@ -312,6 +311,14 @@
         <b>ПРОЙДИТЕ ТЕСТ-ДРАЙВ</b>
         <button class="btn2">Записаться &#8250;</button>
     </div>
+
+    <div class="footer1">
+        <p class="mapName">Как нас найти</p>
+    </div>
+    <div class="myMap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8057e2e519b6217195c894e50af7f91cf54b3ef3f5a3fd760aacfc865bdfa73e&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
 
 
     <div class="footer">
@@ -376,21 +383,31 @@
 
     <script>
 
-        const acc = document.getElementsByClassName("accordion");
+        const accordion = document.getElementById('acc')
+        const text = document.querySelectorAll('.panel')
 
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                Array.prototype.map.call(acc, e => (e.setAttribute('class', e.getAttribute('class').replace(' active', ''))));
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                if (panel.style.maxHeight){
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+        accordion.addEventListener('click', function(event) {
+            if(event.target.tagName === 'H3') {    //если при нажатии на элемент h3
+                const dataId = event.target.dataset.id
+                if (dataId) {
+                    const img = document.getElementById('carimage')
+                    img.setAttribute('src', `pics/${dataId}.jpg`)
                 }
-            });
-        }
+                let selectFlag = false             //создается флаг
+                // если при нажатии соседний элемент имеет класс show , то флаг + и ничего
+                if(event.target.nextElementSibling.classList.contains('panel_show'))  {
+                    selectFlag = true
+                }
+                text.forEach(text => {             //дальше после нажатия на всех элементах text убираем класс show
+                    text.classList.remove('panel_show')
+                })
 
+                // если при нажатии флаг не равен true то на соседний элемент от нажатого вешается  show
+                if(!selectFlag) {
+                    event.target.nextElementSibling.classList.add('panel_show')
+                }
+            }
+        })
 
 
     </script>

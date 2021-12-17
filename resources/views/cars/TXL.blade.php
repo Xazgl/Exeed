@@ -10,25 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="/style/style.css" rel="stylesheet">
     <link href="/style/styleTXL.css" rel="stylesheet">
+
 
     <title>@yield('title')</title>
 </head>
 <body>
 
 @yield('content')
-<section class="background">
+<div class="background">
 
     <div class = "main">
 
@@ -36,11 +36,13 @@
 
             <div class ="first-colum">
                 <div class ="logo-left">
-                    <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
+                    <a href="{{ route('index') }}"> <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg"  alt="АВТОГРАД EXEED" style="max-width: 128px">  </a>
+                </div>
                 <div class="space"></div>
                 <div class="spaceJ"></div>
                 <div class="logo-right">
-                    <a class="href" href="{{ route('index') }}"><b><h7>АРКОНТ EXEED</h7></b> <br>
+                    <a class="href" href="{{ route('index') }}">
+                     <b><h7>АРКОНТ EXEED</h7></b> <br>
                     <h7>Официальный дилер</h7></a>
                 </div>
             </div>
@@ -65,16 +67,20 @@
     </div>
 
 
+
+
+
+
     <div class="columnMiniMain">
-        <div class ="rowMiniMain"><img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
-        <div class ="rowMiniMain"> <b><h7>АРКОНТ EXEED Официальный дилер</h7></div>
+        <div class ="rowMiniMain"> <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"> </div>
+        <div class ="rowMiniMain"> <b><h7>АРКОНТ EXEED Официальный дилер</h7></b></div>
         <div class ="rowMiniMain"><h7> +7 (8442) 22-70-77</h7></div>
     </div>
 
 
 
 
-<video class="mainVideo" id="video" src="/video/main.mp4"></video>
+<video class="mainVideo" id="video"  muted="muted" src="/video/main.mp4"></video>
 
 <div class="img">
    <div class="imgWords">
@@ -88,7 +94,7 @@
 
     <div class ="ColumCard">
         <div class ="miniTitleCard" id="miniTitle">Среднеразмерный внедорожник</div>
-        <div class ="titleCard"  id="title">Exeed TXL</div>
+        <div class ="titleCard"  id="title">EXEED TXL</div>
         <div class="carImg1" id="carImg"></div>
 
 
@@ -125,7 +131,7 @@
 
 
 
-
+<div id="acc">
 
 <div class="containerWithColumn">
 
@@ -135,29 +141,29 @@
 
         <div  class = "column" id = "rightColumn">
             <div class ="titleColumn">ВЫРАЗИТЕЛЬНЫЙ ДИЗАЙН</div>
-            <div class ="titleul">
+            <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">LED-Оптика</button>
+                    <li id="titleLi"><h3 class="accordion">LED-Оптика</h3>
                         <div class="panel">Полностью светодиодная головная оптика обеспечивает безупречное освещение всех участков дороги, делая каждую поездку в темное время суток максимально комфортной и безопасной.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Пульсирующий логотип</button>
+                    <li id="titleLi"><h3 class="accordion">Пульсирующий логотип</h3>
                         <div class="panel">Стильный логотип EXEED на радиаторной решетке обновленного TXL стал частью схемы приветственного освещения. Подойдите к машине на расстояние трех метров – и буквы заиграют пульсирующим бело-лунным оттенком. То же самое произойдет, если разблокировать двери с ключа.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Диски диаметром 19 дюймов</button>
+                    <li id="titleLi"><h3 class="accordion">Диски диаметром 19 дюймов</h3>
                         <div class="panel">Колеса EXEED изготовлены из алюминиевого сплава и окрашены методом порошкового напыления – самым передовым из возможных. Размерность в 19 дюймов обеспечивает идеальный баланс эстетики и ездового комфорта.</div>
                     </li>
 
 
-                    <li id="titleLi"><button class="accordion">Габаритные размеры</button>
+                    <li id="titleLi"><h3 class="accordion">Габаритные размеры</h3>
                         <div class="panel">
-                            <ul>
-                                <li>Длина - 4780 мм</li>
-                                <li>Ширина - 1885 мм</li>
-                                <li>Высота - 1730 мм</li>
-                                <li>Колесная база - 2800 мм</li>
-                                <li>Клиренс - 210 мм</li>
+                            <ul >
+                                <li class="Mini">Длина - 4780 мм</li>
+                                <li class="Mini">Ширина - 1885 мм</li>
+                                <li class="Mini">Высота - 1730 мм</li>
+                                <li class="Mini">Колесная база - 2800 мм</li>
+                                <li class="Mini">Клиренс - 210 мм</li>
                             </ul>
                         </div>
                     </li>
@@ -182,21 +188,21 @@
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</div>
-            <div class ="titleul">
+            <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">Широкоформатная мультимедийная панель</button>
+                    <li id="titleLi"><h3 class="accordion">Широкоформатная мультимедийная панель</h3>
                         <div class="panel">Безусловная доминанта передней части салона – мультимедийный кластер, состоящий из двух широкоформатных дисплеев (правый – сенсорный). Диагональ каждого составляет 12,3 дюйма, а разрешение 1920*720 пикселей.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Аудиосистема класса премиум</button>
+                    <li id="titleLi"><h3 class="accordion">Аудиосистема класса премиум</h3>
                         <div class="panel">Ощущения премиальности интерьера дополняет акустика на компонентах Arkamys и Sony из 8 динамиков. Вне зависимости от выбранной комплектации аудиосистема обновленного TXL подарит обитателем салона чистый и детальный звук.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Беспроводная зарядка</button>
+                    <li id="titleLi"><h3 class="accordion">Беспроводная зарядка</h3>
                         <div class="panel">С обновленным TXL можно навсегда забыть о зарядных кабелях. Индукционная зарядка на центральном тоннеле быстро подпитает гаджет: отныне вы всегда будете онлайн.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Датчик качества воздуха</button>
+                    <li id="titleLi"><h3 class="accordion">Датчик качества воздуха</h3>
                         <div class="panel">Двухзонный климат-контроль обновленного EXEED TXL оснащен функцией ионизации кислорода и позволяет водителю и переднему пассажиру выбирать максимально комфортную температуру не оглядываясь друг на друга. А также с помощью цветовой индикацией уведомляет о высоком содержании вредных примесей.</div>
                     </li>
 
@@ -221,25 +227,22 @@
 
         <div  class = "column" id = "rightColumn">
             <div class ="titleColumn">ПОВЫШЕННЫЙ КОМФОРТ</div>
-            <div class ="titleul">
+            <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">Панорамный люк</button>
+                    <li id="titleLi"><h3 class="accordion">Панорамный люк</h3>
                         <div class="panel">Технологичная панорамная крыша. Управлять сдвижной секцией можно с помощью пульта дистанционного управления, а на случай дождя предусмотрено ее автоматическое закрывание. Бонусом – теплоизоляционное стекло толщиной в 5 мм.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Зимний пакет</button>
+                    <li id="titleLi"><h3 class="accordion">Зимний пакет</h3>
                         <div class="panel">Какой бы холодной ни оказалась зима, обновленный TXL готов к ее встрече. В зимний пакет входит в стандартное оснащение и включает дистанционный запуск двигателя, обогрев лобового и заднего стекла, форсунок стеклоомывателя, боковых зеркал, руля, а также сидений первого и второго ряда. Функция запуска двигателя позволяет активировать дистанционно климат-контроль.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Сиденья с микроклиматом и памятью положения</button>
+                    <li id="titleLi"><h3 class="accordion">Сиденья с микроклиматом и памятью положения</h3>
                         <div class="panel">Сиденья разработаны профильной американской корпорацией Lear и предоставляют максимум комфорта людям любого роста и комплекции. Передние кресла всех исполнений оснащены сервоприводом и функцией памяти. В версии Flagship добавляется вентиляция.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Функциональный багажник</button>
-                        <div class="panel">Объем багажника обновленного TXL в пятиместной конфигурации составляет 461 литр, а стоит сложить раздельные спинки дивана получим 1 908 литров в сложенном виде. Пятая дверь оснащена электроприводом с возможностью регулировки высоты поднятия.</div>
-                    </li>
 
-                    <li id="titleLi"><button class="accordion">Просторный салон</button>
+                    <li id="titleLi"><h3 class="accordion">Просторный салон</h3>
                         <div class="panel">Колесная база – 2800 мм. Это один из лучших показателей в классе, позволивший обеспечить пассажирам заднего ряда рекордный простор для коленей.</div>
                     </li>
 
@@ -257,21 +260,21 @@
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">КОМПЛЕКСНАЯ БЕЗОПАСНОСТЬ</div>
-            <div class ="titleul">
+            <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><button class="accordion">Полный привод</button>
+                    <li id="titleLi"><h3 class="accordion">Полный привод</h3>
                         <div class="panel">За распределение крутящего момента между осями обновленного TXL отвечает многодисковая муфта производства BorgWarner. Благодаря сверхкороткому времени срабатывания (0,07 секунды) и интеллектуальной системе управления приводом, покорение бездорожья станет легкой и приятной прогулкой.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Ассистент движения в полосе</button>
+                    <li id="titleLi"><h3 class="accordion">Ассистент движения в полосе</h3>
                         <div class="panel">Обновленный TXL с системой удержания в полосе (LKA) всегда готов подстраховать в опасной ситуации.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Система безопасного выхода</button>
+                    <li id="titleLi"><h3 class="accordion">Система безопасного выхода</h3>
                         <div class="panel">В оживленном мегаполисе опасность может поджидать на каждом углу. Так что мы научили обновленный TXL следить за окружающей обстановкой даже в статике. При обнаружении помехи в виде другого автомобиля или велосипедиста, система безопасного выхода подаст звуковой сигнал при открывании двери.</div>
                     </li>
 
-                    <li id="titleLi"><button class="accordion">Помощь при спуске и на подъеме</button>
+                    <li id="titleLi"><h3 class="accordion">Помощь при спуске и на подъеме</h3>
                         <div class="panel">Дополнительную уверенность на бездорожье придадут системы помощи при подъеме и спуске. Первая поможет тронуться с места, не откатившись назад. Вторая возьмет на себя управление тормозами при движении под гору.</div>
                     </li>
 
@@ -284,8 +287,7 @@
 
     </div>
 
-
-
+</div>
 
     <div class="containerWithColumn">
         <div  class = "column" id = "leftColumn5"></div>
@@ -294,10 +296,16 @@
 
 
     <div class="testDrive" id="testDriveTXL">
-        <b>ПРОЙТИ ТЕСТ-ДРАЙВ</b>
+        <b>ПРОЙДИТЕ ТЕСТ-ДРАЙВ</b>
         <button class="btn2">Записаться &#8250;</button>
     </div>
 
+    <div class="footer1">
+        <p class="mapName">Как нас найти</p>
+    </div>
+    <div class="myMap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8057e2e519b6217195c894e50af7f91cf54b3ef3f5a3fd760aacfc865bdfa73e&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
 
     <div class="footer">
 
@@ -362,23 +370,30 @@
 
     <script>
 
-        const acc = document.getElementsByClassName("accordion");
+        const accordion = document.getElementById('acc')
+        const text = document.querySelectorAll('.panel')
 
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                Array.prototype.map.call(acc, e => (e.setAttribute('class', e.getAttribute('class').replace(' active', ''))));
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                if (panel.style.maxHeight){
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+        accordion.addEventListener('click', function(event) {
+            if(event.target.tagName === 'H3') {    //если при нажатии на элемент h3
+                let selectFlag = false             //создается флаг
+                // если при нажатии соседний элемент имеет класс show , то флаг + и ничего
+                if(event.target.nextElementSibling.classList.contains('panel_show'))  {
+                    selectFlag = true
                 }
-            });
-        }
+                text.forEach(text => {             //дальше после нажатия на всех элементах text убираем класс show
+                    text.classList.remove('panel_show')
+                })
+
+                // если при нажатии флаг не равен true то на соседний элемент от нажатого вешается  show
+                if(!selectFlag) {
+                    event.target.nextElementSibling.classList.add('panel_show')
+                }
+            }
+        })
 
 
-</script>
+
+    </script>
 
 
 

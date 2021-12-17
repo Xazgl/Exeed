@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,7 +34,8 @@
 
       <div class ="first-colum">
         <div class ="logo-left">
-            <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
+            <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg"  alt="АВТОГРАД EXEED" style="max-width: 128px">
+        </div>
         <div class="space"></div>
         <div class="spaceJ"></div>
         <div class="logo-right">
@@ -69,7 +71,7 @@
 </div>
 
 
-<video class="mainVideo" id="video" src="/video/main.mp4"></video>
+<video class="mainVideo" id="video" muted="muted" src="/video/main2.mp4"></video>
 
 
 
@@ -193,7 +195,7 @@
 
      <div class="columCAR" id="left_Carcolumn">
          <h3 id="miniTitle">НАШИ ПРЕИМУЩЕСТВА</h3>
-         <p class="p7">Официальный дилер АРКОНТ EXEED в Волгограде предлагает выгодные условия на автомобили марки EXEED и
+         <p class="p7">Официальный дилер  EXEED АРКОНТ в Волгограде предлагает выгодные условия на автомобили марки EXEED и
                  предоставляет полный спектр высококачественных финансовых, технических и сервисных услугах</p>
 
                  <ul>
