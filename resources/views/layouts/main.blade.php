@@ -39,7 +39,7 @@
         <div class="space"></div>
         <div class="spaceJ"></div>
         <div class="logo-right">
-           <b><h7>АРКОНТ EXEED</h7></b> <br>
+           <b><h7>EXEED АРКОНТ</h7></b> <br>
               <h7>Официальный дилер</h7>
         </div>
      </div>

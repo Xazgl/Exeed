@@ -42,7 +42,7 @@
                 <div class="spaceJ"></div>
                 <div class="logo-right">
                     <a class="href" href="{{ route('index') }}">
-                     <b><h7>АРКОНТ EXEED</h7></b> <br>
+                     <b><h7>EXEED АРКОНТ</h7></b> <br>
                     <h7>Официальный дилер</h7></a>
                 </div>
             </div>
@@ -131,9 +131,9 @@
 
 
 
-<div id="acc">
 
-<div class="containerWithColumn">
+
+<div class="containerWithColumn"  id="acc">
 
         <div  class = "column" id = "leftColumn">
 
@@ -143,20 +143,20 @@
             <div class ="titleColumn">ВЫРАЗИТЕЛЬНЫЙ ДИЗАЙН</div>
             <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><h3 class="accordion">LED-Оптика</h3>
+                    <li id="titleLi"><h3 class="accordion"  data-id=1>LED-Оптика</h3>
                         <div class="panel">Полностью светодиодная головная оптика обеспечивает безупречное освещение всех участков дороги, делая каждую поездку в темное время суток максимально комфортной и безопасной.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Пульсирующий логотип</h3>
+                    <li id="titleLi"><h3 class="accordion"  data-id=2>Пульсирующий логотип</h3>
                         <div class="panel">Стильный логотип EXEED на радиаторной решетке обновленного TXL стал частью схемы приветственного освещения. Подойдите к машине на расстояние трех метров – и буквы заиграют пульсирующим бело-лунным оттенком. То же самое произойдет, если разблокировать двери с ключа.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Диски диаметром 19 дюймов</h3>
+                    <li id="titleLi"><h3 class="accordion"  data-id=3>Диски диаметром 19 дюймов</h3>
                         <div class="panel">Колеса EXEED изготовлены из алюминиевого сплава и окрашены методом порошкового напыления – самым передовым из возможных. Размерность в 19 дюймов обеспечивает идеальный баланс эстетики и ездового комфорта.</div>
                     </li>
 
 
-                    <li id="titleLi"><h3 class="accordion">Габаритные размеры</h3>
+                    <li id="titleLi"><h3 class="accordion"  data-id=4>Габаритные размеры</h3>
                         <div class="panel">
                             <ul >
                                 <li class="Mini">Длина - 4780 мм</li>
@@ -183,26 +183,26 @@
 
 
 
-    <div class="containerWithColumn">
+    <div class="containerWithColumn"  id="acc2">
 
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</div>
             <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><h3 class="accordion">Широкоформатная мультимедийная панель</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=5>Широкоформатная мультимедийная панель</h3>
                         <div class="panel">Безусловная доминанта передней части салона – мультимедийный кластер, состоящий из двух широкоформатных дисплеев (правый – сенсорный). Диагональ каждого составляет 12,3 дюйма, а разрешение 1920*720 пикселей.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Аудиосистема класса премиум</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=6>Аудиосистема класса премиум</h3>
                         <div class="panel">Ощущения премиальности интерьера дополняет акустика на компонентах Arkamys и Sony из 8 динамиков. Вне зависимости от выбранной комплектации аудиосистема обновленного TXL подарит обитателем салона чистый и детальный звук.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Беспроводная зарядка</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=7>Беспроводная зарядка</h3>
                         <div class="panel">С обновленным TXL можно навсегда забыть о зарядных кабелях. Индукционная зарядка на центральном тоннеле быстро подпитает гаджет: отныне вы всегда будете онлайн.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Датчик качества воздуха</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=8>Датчик качества воздуха</h3>
                         <div class="panel">Двухзонный климат-контроль обновленного EXEED TXL оснащен функцией ионизации кислорода и позволяет водителю и переднему пассажиру выбирать максимально комфортную температуру не оглядываясь друг на друга. А также с помощью цветовой индикацией уведомляет о высоком содержании вредных примесей.</div>
                     </li>
 
@@ -219,7 +219,7 @@
 
 
 
-    <div class="containerWithColumn">
+    <div class="containerWithColumn"  id="acc3">
 
         <div  class = "column" id = "leftColumn3">
 
@@ -229,20 +229,20 @@
             <div class ="titleColumn">ПОВЫШЕННЫЙ КОМФОРТ</div>
             <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><h3 class="accordion">Панорамный люк</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=9>Панорамный люк</h3>
                         <div class="panel">Технологичная панорамная крыша. Управлять сдвижной секцией можно с помощью пульта дистанционного управления, а на случай дождя предусмотрено ее автоматическое закрывание. Бонусом – теплоизоляционное стекло толщиной в 5 мм.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Зимний пакет</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=10>Зимний пакет</h3>
                         <div class="panel">Какой бы холодной ни оказалась зима, обновленный TXL готов к ее встрече. В зимний пакет входит в стандартное оснащение и включает дистанционный запуск двигателя, обогрев лобового и заднего стекла, форсунок стеклоомывателя, боковых зеркал, руля, а также сидений первого и второго ряда. Функция запуска двигателя позволяет активировать дистанционно климат-контроль.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Сиденья с микроклиматом и памятью положения</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=11>Сиденья с микроклиматом и памятью положения</h3>
                         <div class="panel">Сиденья разработаны профильной американской корпорацией Lear и предоставляют максимум комфорта людям любого роста и комплекции. Передние кресла всех исполнений оснащены сервоприводом и функцией памяти. В версии Flagship добавляется вентиляция.</div>
                     </li>
 
 
-                    <li id="titleLi"><h3 class="accordion">Просторный салон</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=12>Просторный салон</h3>
                         <div class="panel">Колесная база – 2800 мм. Это один из лучших показателей в классе, позволивший обеспечить пассажирам заднего ряда рекордный простор для коленей.</div>
                     </li>
 
@@ -255,26 +255,26 @@
 
 
 
-    <div class="containerWithColumn">
+    <div class="containerWithColumn"  id="acc4">
 
 
         <div  class = "column" id = "rightColumn1">
             <div class ="titleColumn">КОМПЛЕКСНАЯ БЕЗОПАСНОСТЬ</div>
             <div class ="titleul" id="ul">
                 <ul>
-                    <li id="titleLi"><h3 class="accordion">Полный привод</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=13>Полный привод</h3>
                         <div class="panel">За распределение крутящего момента между осями обновленного TXL отвечает многодисковая муфта производства BorgWarner. Благодаря сверхкороткому времени срабатывания (0,07 секунды) и интеллектуальной системе управления приводом, покорение бездорожья станет легкой и приятной прогулкой.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Ассистент движения в полосе</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=14>Ассистент движения в полосе</h3>
                         <div class="panel">Обновленный TXL с системой удержания в полосе (LKA) всегда готов подстраховать в опасной ситуации.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Система безопасного выхода</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=15>Система безопасного выхода</h3>
                         <div class="panel">В оживленном мегаполисе опасность может поджидать на каждом углу. Так что мы научили обновленный TXL следить за окружающей обстановкой даже в статике. При обнаружении помехи в виде другого автомобиля или велосипедиста, система безопасного выхода подаст звуковой сигнал при открывании двери.</div>
                     </li>
 
-                    <li id="titleLi"><h3 class="accordion">Помощь при спуске и на подъеме</h3>
+                    <li id="titleLi"><h3 class="accordion" data-id=16>Помощь при спуске и на подъеме</h3>
                         <div class="panel">Дополнительную уверенность на бездорожье придадут системы помощи при подъеме и спуске. Первая поможет тронуться с места, не откатившись назад. Вторая возьмет на себя управление тормозами при движении под гору.</div>
                     </li>
 
@@ -356,7 +356,6 @@
             </div>
         </div>
 
-    </div>
 
 
 
@@ -365,127 +364,4 @@
 
 
 
-
-
-
-    <script>
-
-        const accordion = document.getElementById('acc')
-        const text = document.querySelectorAll('.panel')
-
-        accordion.addEventListener('click', function(event) {
-            if(event.target.tagName === 'H3') {    //если при нажатии на элемент h3
-                let selectFlag = false             //создается флаг
-                // если при нажатии соседний элемент имеет класс show , то флаг + и ничего
-                if(event.target.nextElementSibling.classList.contains('panel_show'))  {
-                    selectFlag = true
-                }
-                text.forEach(text => {             //дальше после нажатия на всех элементах text убираем класс show
-                    text.classList.remove('panel_show')
-                })
-
-                // если при нажатии флаг не равен true то на соседний элемент от нажатого вешается  show
-                if(!selectFlag) {
-                    event.target.nextElementSibling.classList.add('panel_show')
-                }
-            }
-        })
-
-
-
-    </script>
-
-
-
-
-
-    <script>
-        const video =document.getElementById('video')
-        let play = false
-        video.addEventListener('mouseenter', event => {
-            video.play()
-        })
-        video.addEventListener('mouseleave', event => {
-            video.pause()
-        })
-    </script>
-
-
-    <script>
-
-        function $(selector) {
-            return document.querySelector(selector) // $ заместо document.querySelector(selector)
-        }
-
-
-        EventTarget.prototype.on = function (eventName, callback) {
-            this.addEventListener(eventName, callback) // теперь пишется on заместо EventTarget
-        }
-
-
-
-        const body = document.querySelector('body')
-        const btnBegin= $('.btn-main')
-        const modalBackground= $('.modalBackground');
-        const modalWindow = $('.modalWindow');
-
-
-        btnBegin.on('click' , () => {
-            modalBackground.classList.add('modalBackground_show')
-            body.classList.add('disable-scroll')
-        })
-
-        function closeModal() {
-
-            modalBackground.classList.add('modalBackground_close-starting'); // повеси лкласс закрытия анимации
-
-            function animationRemove() {
-                modalBackground.classList.remove('modalBackground_close-starting');
-                modalBackground.classList.remove('modalBackground_show');
-                body.classList.remove('disable-scroll')
-                // Удаляем слушатель (нужно передать именно ту же функцию, что и в addEventListenter)
-                modalBackground.removeEventListener('animationend',animationRemove)
-            }
-            // Вешаем слушатель через addEventListenter
-            modalBackground.on('animationend',animationRemove);
-        }
-
-
-        $('#close-modal').on('click',closeModal)
-        modalBackground.on('click', (event) => {
-            if(event.target ===  modalBackground) closeModal()
-        })
-
-
-        const btnBegin2= $('.btn2')
-
-
-
-        btnBegin2.on('click' , () => {
-            modalBackground.classList.add('modalBackground_show')
-            body.classList.add('disable-scroll')
-        })
-
-        function closeModal() {
-
-            modalBackground.classList.add('modalBackground_close-starting'); // повеси лкласс закрытия анимации
-
-            function animationRemove() {
-                modalBackground.classList.remove('modalBackground_close-starting');
-                modalBackground.classList.remove('modalBackground_show');
-                body.classList.remove('disable-scroll')
-                // Удаляем слушатель (нужно передать именно ту же функцию, что и в addEventListenter)
-                modalBackground.removeEventListener('animationend',animationRemove)
-            }
-            // Вешаем слушатель через addEventListenter
-            modalBackground.on('animationend',animationRemove);
-        }
-
-
-        $('#close-modal').on('click',closeModal)
-        modalBackground.on('click', (event) => {
-            if(event.target ===  modalBackground) closeModal()
-        })
-
-    </script>
-
+    <script src="/Js/txl.js"> </script>
