@@ -984,9 +984,7 @@ h3{
         margin-left:0px;
     }
 
-    .twoModel {
-        flex-direction: column;
-    }
+
 }
 
 
@@ -996,7 +994,7 @@ h3{
         font-size: 10px;
     }
     .three-colum {
-        margin-left: 300px;
+        margin-left: 500px;
     }
     .second-colum {
         flex-direction: column;
@@ -1008,9 +1006,7 @@ h3{
         margin-left:0px;
     }
 
-    .twoModel {
-        flex-direction: column;
-    }
+
     .btn-main {
         font-size: 10px;
     }
@@ -1042,7 +1038,28 @@ h3{
         width: 100%;
     }
 }
-@media only screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1375px) {
+
+    .three-colum {
+        margin-left: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 1287px) {
+
+    .three-colum {
+        margin-left: 350px;
+    }
+
+}
+
+
+
+
+    @media only screen and (max-width: 1268px) {
     .btn2 {
         width: 250px;
         height: 50px;
@@ -1051,11 +1068,29 @@ h3{
     .testDrive {
         font-size: 50px;
     }
+    .row {
+        font-size: 70px;
+    }
+    .row1 {
+        font-size: 18px;
+    }
+
+    .carImg1 {
+        width: 500px;
+    }
+    .carImg {
+        width: 500px;
+    }
 }
 
-@media only screen and (max-width: 1163px) {
+@media only screen and (max-width: 1225px) {
     .three-colum {
-        margin-left: 200px;
+        margin-left: 300px;
+    }
+
+@media only screen and (max-width: 1168px) {
+    .three-colum {
+        margin-left: 250px;
     }
 
     @media only screen and (max-width: 1150px) {
@@ -1070,15 +1105,44 @@ h3{
         }
         .btn2:hover {
             font-size: 21px;
+        }
 
         .testDrive {
             font-size: 40px;
         }
+        .row1{
+            font-size: 16px;
+        }
+
     }
-}
+
+    @media only screen and (max-width: 1136px) {
+        .three-colum {
+            margin-left: 200px;
+        }
 
 
-    @media screen and (max-width: 960px) {
+            @media only screen and (max-width: 1080px) {
+        .twoModel {
+            flex-direction: column;
+        }
+    }
+
+
+     @media only screen and (max-width: 1076px) {
+        .three-colum {
+            margin-left: 150px;
+        }
+     }
+
+    @media only screen and (max-width: 1024px) {
+            .three-colum {
+            margin-left: 100px;
+            }
+    }
+
+
+                @media screen and (max-width: 960px) {
 
 
         .logo-right {

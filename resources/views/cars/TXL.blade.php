@@ -12,6 +12,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
           rel="stylesheet">
+
+    <!-- calltouch -->
+    <script type="text/javascript">
+        (function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.type="text/javascript";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","csgmypuz");
+    </script>
+    <!-- calltouch -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(86535051, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/86535051" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ9HMVHM69"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MQ9HMVHM69');
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -22,6 +55,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="/style/style.css" rel="stylesheet">
     <link href="/style/styleTXL.css" rel="stylesheet">
+
 
 
     <title>@yield('title')</title>
@@ -175,12 +209,7 @@
 </div>
 
 
-
-
-
-
-
-<div class="containerWithColumn"  id="acc">
+    <div class="containerWithColumn"  id="acc">
 
         <div  class = "column" id = "leftColumn">
 
@@ -219,7 +248,7 @@
             </div>
 
         </div>
- </div>
+    </div>
 
 
 
@@ -336,49 +365,53 @@
 
 </div>
 
-    <div class="containerWithColumn">
-        <div  class = "column" id = "leftColumn5"></div>
-        <div  class = "column" id = "leftColumn6"></div>
-    </div>
+<div class="containerWithColumn">
+    <div  class = "column" id = "leftColumn5"></div>
+    <div  class = "column" id = "leftColumn6"></div>
+</div>
 
 
-    <div class="testDrive" id="testDriveTXL">
-        <b>ПРОЙДИТЕ ТЕСТ-ДРАЙВ</b>
-        <button class="btn2">Записаться &#8250;</button>
-    </div>
+<div class="testDrive" id="testDriveTXL">
+    <b>ПРОЙДИТЕ ТЕСТ-ДРАЙВ</b>
+    <button class="btn2">Записаться &#8250;</button>
+</div>
 
-    <div class="footer1">
-        <p class="mapName">Как нас найти</p>
-    </div>
-    <div class="myMap">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8057e2e519b6217195c894e50af7f91cf54b3ef3f5a3fd760aacfc865bdfa73e&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=true"></script>
-    </div>
+<div class="footer1">
+    <p class="mapName">Как нас найти</p>
+</div>
+<div class="myMap">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8057e2e519b6217195c894e50af7f91cf54b3ef3f5a3fd760aacfc865bdfa73e&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
 
-    <div class="footer">
+<div class="footer">
 
-        <div class ="first-colum">
-            <div class ="logo-left">
-                <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
-            <div class="space"></div>
-            <div class="spaceJ-footer"></div>
-            <div class="logo-right"><b>АРКОНТ EXEED</b><br>
-                Официальный дилер
-            </div>
+    <div class ="first-colum">
+        <div class ="logo-left">
+            <img src="https://avtograd-exeed.ru/wp-content/uploads/exeed-color-brand.svg "  alt="АВТОГРАД EXEED" style="max-width: 128px"></div>
+        <div class="space"></div>
+        <div class="spaceJ-footer"></div>
+        <div class="logo-right"><b>АРКОНТ EXEED</b><br>
+            Официальный дилер
         </div>
-
-
-        <div class ="three-colum" id="footerRightWords">
-            <ul>
-                <li class="footerLi"><b>+7 (8442) 22-70-77</b></li>
-                <li class="footerLi">г. Волгоград, ул. им. Землячки, 19Г</li>
-            </ul>
-        </div>
-
     </div>
 
 
+    <div class ="three-colum" id="footerRightWords">
+        <ul>
+            <li class="footerLi"><b>+7 (8442) 22-70-77</b></li>
+            <li class="footerLi">г. Волгоград, ул. им. Землячки, 19Г</li>
+        </ul>
+    </div>
 
-    <div  class="modalBackground" id="modalBackground">
+</div>
+
+
+
+
+
+
+
+<div  class="modalBackground" id="modalBackground">
 
         <div  class = "modalWindow" id="modalWindow">
             <div class="mb-3"><h3 id="modalTitle">ЗАПИСЬ НА ТЕСТ-ДРАЙВ</h3></div>
@@ -411,4 +444,9 @@
 
 
 
-    <script src="/Js/txl.js"> </script>
+<script src="/Js/txl.js"> </script>
+<script src="https://js.cx/libs/animate.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

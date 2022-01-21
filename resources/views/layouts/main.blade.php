@@ -12,6 +12,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@1,500&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
         rel="stylesheet">
+
+    <!-- calltouch -->
+    <script type="text/javascript">
+        (function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.type="text/javascript";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","csgmypuz");
+    </script>
+    <!-- calltouch -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(86535051, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/86535051" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ9HMVHM69"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MQ9HMVHM69');
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -21,6 +54,7 @@
     <link rel="icon" href="/favicon/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="/style/style.css" rel="stylesheet">
+
 
     <title>@yield('title')</title>
 </head>
@@ -132,25 +166,30 @@
 
         <div class ="twoROW">
             <div class ="twoColumCard">
+
                 <div class="inColum">
-                    <div class ="row3"> <img  class ="mini" src="/images/y.png"> </div>
+                    <div class ="row3"> <img class ="mini" src="/images/y.png"> </div>
                     <div class ="row">186</div>
                     <div class ="row1">Мощность</div>
                 </div>
+
                 <div class="inColum">
                     <div class="space"></div>
                     <div class="spaceJ"></div>
                 </div>
+
                 <div class="inColum">
-                    <div class ="row3"> <img  class ="mini" src="/images/d.png"> </div>
+                    <div class ="row3"> <img class ="mini" src="/images/d.png"> </div>
                     <div class ="row">275</div>
                     <div class ="row1">Крутящий Момент,Н-м</div>
                 </div>
+
             </div>
 
 
 
             <div class ="twoColumCard">
+
                 <div class="inColum1">
                     <div class ="row3"> <img  class ="mini" src="/images/t.png"> </div>
                     <div class ="row">9,8</div>
@@ -186,21 +225,26 @@
 
 
         <div class ="twoROW">
+
         <div class ="twoColumCard">
+
             <div class="inColum">
-                <div class ="row3"> <img  class ="mini" src="/images/y.png"> </div>
+              <div class ="row3"> <img  class ="mini" src="/images/y.png"> </div>
               <div class ="row">249</div>
               <div class ="row1">Мощность</div>
             </div>
+
             <div class="inColum">
                 <div class="space"></div>
                 <div class="spaceJ"></div>
             </div>
+
             <div class="inColum">
                <div class ="row3"> <img  class ="mini" src="/images/d.png"> </div>
                <div class ="row">385</div>
                <div class ="row1">Крутящий Момент,Н-м</div>
             </div>
+
         </div>
 
         <div class ="twoColumCard">
@@ -364,17 +408,18 @@
             <div class="mb-3"><h3 id="modalTitle">ЗАПИСЬ НА ТЕСТ-ДРАЙВ</h3></div>
          <div class ="modalEl">
 
-            <form method="post"  enctype="multipart/form-data">>
+            <form action ="{{ route('email.send') }}" method="post" enctype="multipart/form-data">
+                @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label"></label>
-                    <input type="text" class="name" id="name" name="name"  placeholder="Имя"  value="{{ old ('name') }}">
+                    <input type="text" class="name" id="name" name="name"  placeholder="Имя"   required>
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label"></label>
-                    <input type="text" class="name" id="phone" name="phone"  placeholder="+7(***)-***-**-**"  value="{{ old ('phone') }}">
+                    <input type="text" class="name" id="phone" name="phone"  placeholder="+7(***)-***-**-**"  required>
                 </div>
                 <div class="mb-3">
-                <button class="btn-modal" type ="submit">Записаться</button>
+                <button class="btn-modal" type ="submit" name="submit"  value="submit">Записаться</button>
                 </div>
             </form>
           </div>
@@ -401,120 +446,30 @@
 
 
 
-            </div>
-            @section('scripts')
+</div>
 
-                <script>
-
-                function $(selector) {
-                return document.querySelector(selector) // $ заместо document.querySelector(selector)
-                }
-
-
-                EventTarget.prototype.on = function (eventName, callback) {
-                this.addEventListener(eventName, callback) // теперь пишется on заместо EventTarget
-                }
+@section('scripts')
 
 
 
-                const body = document.querySelector('body')
-                const btnBegin= $('.btn-main')
-                const modalBackground= $('.modalBackground');
-                const modalWindow = $('.modalWindow');
 
 
-                btnBegin.on('click' , () => {
-                modalBackground.classList.add('modalBackground_show')
-                body.classList.add('disable-scroll')
-                })
-
-                function closeModal() {
-
-                modalBackground.classList.add('modalBackground_close-starting'); // повеси лкласс закрытия анимации
-
-                function animationRemove() {
-                modalBackground.classList.remove('modalBackground_close-starting');
-                modalBackground.classList.remove('modalBackground_show');
-                body.classList.remove('disable-scroll')
-                // Удаляем слушатель (нужно передать именно ту же функцию, что и в addEventListenter)
-                modalBackground.removeEventListener('animationend',animationRemove)
-                }
-                // Вешаем слушатель через addEventListenter
-                modalBackground.on('animationend',animationRemove);
-                }
-
-
-                $('#close-modal').on('click',closeModal)
-                modalBackground.on('click', (event) => {
-                if(event.target ===  modalBackground) closeModal()
-                })
-
-
-                    const btnBegin2= $('.btn2')
+ <script src="https://js.cx/libs/animate.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 
 
-                    btnBegin2.on('click' , () => {
-                        modalBackground.classList.add('modalBackground_show')
-                        body.classList.add('disable-scroll')
-                    })
-
-                    function closeModal() {
-
-                        modalBackground.classList.add('modalBackground_close-starting'); // повеси лкласс закрытия анимации
-
-                        function animationRemove() {
-                            modalBackground.classList.remove('modalBackground_close-starting');
-                            modalBackground.classList.remove('modalBackground_show');
-                            body.classList.remove('disable-scroll')
-                            // Удаляем слушатель (нужно передать именно ту же функцию, что и в addEventListenter)
-                            modalBackground.removeEventListener('animationend',animationRemove)
-                        }
-                        // Вешаем слушатель через addEventListenter
-                        modalBackground.on('animationend',animationRemove);
-                    }
-
-
-                    $('#close-modal').on('click',closeModal)
-                    modalBackground.on('click', (event) => {
-                        if(event.target ===  modalBackground) closeModal()
-                    })
-
-                </script>
-                <script>
-                    const video =document.getElementById('video')
-                    let play = false
-                    video.addEventListener('mouseenter', event => {
-                        video.play()
-                    })
-                    video.addEventListener('mouseleave', event => {
-                        video.pause()
-                    })
-                </script>
-
-
-
-                <script src="https://js.cx/libs/animate.js"></script>
-                <script type="text/javascript" src="js/jquery.js"></script>
-                <script type="text/javascript" src="js/main.js"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-
-
-                <script src="https://code.jquery.com/jquery-3.6.0.js"
-                        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-                        crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-                        crossorigin="anonymous"></script>
-
-
-                <script>
-                    $(".footer").fadeIn(3000);
-                </script>
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+crossorigin="anonymous"></script>
+<script>$(".footer").fadeIn(3000);</script>
+<script src="/Js/main.js"> </script>
 @show
 </body>
 
